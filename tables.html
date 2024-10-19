@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tables.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.0/dist/chart.min.js"></script>
+
+    <title>Weather Dashboard</title>
+</head>
+<body>
+    <div class="sidebar">
+        <h1>Weather Forecast</h1>
+        <a href="index.html" class="links">Dashboard</a>
+        <a href="tables.html" class="links">Tables</a>
+    </div>
+
+    <div class="main"> 
+        <div class="input">
+            <h1>Table and Chatbot</h1>
+            <input type="text" id="city-input" placeholder="Enter city name" />
+            <button id="inputbtn">Search</button>
+        </div>
+
+        <div class="container">
+        <div class="forecast-table">
+            <table id="forecastTable">
+                <thead>
+                    <tr class="heading">
+                        <th>Date</th>
+                        <th>Temperature (°C)</th>
+                        <th>Weather</th>
+                        <th>Humidity (%)</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody"></tbody>
+            </table>
+            <div class="pagination">
+                <button id="prevBtn"><</button>
+                <span id="pageDisplay">Page 1</span>
+                <button id="nextBtn">></button>
+            </div>
+            <div class="filters">
+                <button id="sortAsc">Sort Temperatures (Asc)</button>
+                <button id="sortDesc">Sort Temperatures (Desc)</button>
+                <button id="filterRain">Show Only Rainy Days</button>
+                <button id="highestTemp">Show Highest Temperature</button>
+            </div>
+
+           
+        </div>
+
+        <div class="chatbot-container">
+            <div id="chatbot-messages" class="chatbot-messages">
+                <p>Chatbot</p>
+            </div>
+        
+            <div class="chatbot-input-area">
+                <input type="text" id="chatbot-input" placeholder="Ask me something..." autocomplete="off">
+                <button id="chatbot-send-btn">Send</button>
+            </div>
+           
+
+        </div>
+
+       </div>
+        
+
+    </div>
+    
+    <script src="tables.js"></script>
+    </body>
+    </html>
