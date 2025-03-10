@@ -3,6 +3,8 @@ const mykey = '595a9c68fd968997e445bae48b0e50aa'; // My key for get weather data
 let Bar = null; 
 let Doughnut = null; 
 let Line= null; 
+let temp10=null;
+//Added a line to for githib commit 
 
 // When button click, go do this
 document.getElementById('inputbtn').addEventListener('click', () => {
